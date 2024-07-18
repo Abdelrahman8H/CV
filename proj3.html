@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #ffffff, #000000);
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-2 navbar-expand-lg navbar-light bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="CV.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#proj1">Largest Companies In USA</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container"  id="proj1">
+        <h2 class="project-title">Largest Companies In USA Web Scraping</h2>
+        <p>Introduction: This project aims to use Web Scraping to get the data of the largest companies in USA from Wikipedia.org.
+        <br>Objective: This project aims to get data from wikipedia.org by using Python.
+        <br>Tools Used: Anaconda, Jupyter Notebook.
+        <br>Libraries Used: BeautifulSoup, requests, pandas. 
+        <br>Conclusion: successfully added the data to a CSV file from the web table. 
+        <br><h6>Some Of The Project Code:</h6></p>
+        <img src="Images\proj1.PNG" alt="Project Image" class="project-img">
+    </div>
+    <div class="container">
+        <h2 class="project-title">Project Title 2</h2>
+        <img src="Images\data.jpg" alt="Project Image" class="project-img">
+        <p>Your project description goes here. You can add more text about your project.</p>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

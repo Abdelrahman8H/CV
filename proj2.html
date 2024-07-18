@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #ffffff, #000000);
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-2 navbar-expand-lg navbar-light bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="CV.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#proj1">Shipment Data</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <div class="container"  id="proj1">
+        <h2 class="project-title">Shipment Data Cleaning</h2>
+        <p>Introduction: This project aims to clean a shipment dataset obtained from Kaggle.com, the dataset contains shipment details of a company.  
+        <br>Objective: The objective of this project is to clean the dataset using Microsoft Excel. 
+        <br>Description of the Dataset: The dataset includes variables such as Segment, Ship Mode, Order ID, and Sales. 
+        <br>Data Cleaning Steps: First, we removed duplicate data, combined variables into single columns, and filtered data by Segment and then by Ship Mode.  
+        <br>This is the Data before cleaning:</p>
+        <img src="Images\dirty.png" alt="Project Image" class="project-img">
+        <p>This is the Data after cleaning:</p>
+        <img src="Images\clean.png" alt="Project Image" class="project-img">
+    </div>
+    <div class="container">
+        <h2 class="project-title">Project Title 2</h2>
+        <img src="Images\data.jpg" alt="Project Image" class="project-img">
+        <p>Your project description goes here. You can add more text about your project.</p>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

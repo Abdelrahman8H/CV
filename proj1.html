@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #ffffff, #000000);
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-2 navbar-expand-lg navbar-light bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="CV.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#proj1">Airline Analysis</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container"  id="proj1">
+        <h2 class="project-title">Airline Analysis</h2>
+        <p>introduction: This project aims to Analyze and visualize Airline data obtained from kaggle.com to uncover trends and insights about the data. 
+        <br>Objective: This project aims to analyze and visualize data using Microsoft Power BI. 
+        <br>Description of the Dataset: The dataset has variables such as Passenger ID, Nationality of passengers, Age, Airports, Flight Status, and Gender. 
+        <br>Prepare Data: Added Age Range using age for better Analyzation. 
+        <br>Data Visualization: Added Cards for Passengers and Airports, Added Slicer for continents, Added ArcGIS Map, Added Stacked Bar Chart for Nationalities, Added Stacked Column Chart with Drill Down for Age-Range and Age, Added Donut and Pie Charts for Gender and Flight Status. 
+        <br><h4>Dashboard:</h4></p>
+        <img src="Images\proj1.PNG" alt="Project Image" class="project-img">
+    </div>
+    <div class="container">
+        <h2 class="project-title">Project Title 2</h2>
+        <img src="Images\data.jpg" alt="Project Image" class="project-img">
+        <p>Your project description goes here. You can add more text about your project.</p>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
